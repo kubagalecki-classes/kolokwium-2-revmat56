@@ -1,4 +1,4 @@
-
+#pragma once
 
 #include "catch.hpp"
 
@@ -12,24 +12,24 @@ class Warzywo{
 public:
     Warzywo(const std::string& a, double b, int c): nazwa(a), cena(b), kolor(c)
     { 
-        i++;
+        n++;
     }
     ~Warzywo() 
     {
-        i--;
+        n--;
     }
 
-    inline static unsigned getVeg() 
+   static unsigned getVeg() 
     {
-        return i;
+      return n;
     }
 
     void opis(std::ostream& s) const 
     {
         s <<  nazwa << 
-          ":"
+          ": "
            << cena 
-          << ","
+          << ", "
           << kolor << "\n";
     }
 
@@ -37,7 +37,9 @@ private:
     std::string nazwa;
     double      cena;
     int         kolor;
-    inline static unsigned i;
+   
+     static unsigned int      n;
 
 };
-inline unsigned Warzywo::i = 0;
+
+ unsigned int Warzywo::n = 0;
