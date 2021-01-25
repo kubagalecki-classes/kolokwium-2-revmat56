@@ -9,5 +9,5 @@
 template <class T>
 unsigned gotujZupe(const Warzywo& a,const T& t)
 {
-    return (t.gotuj(a)) * (t.gotuj(a));
+    return (t.gotujZupe(a)) * (t.gotujZupe(a));
 }
