@@ -42,4 +42,4 @@ private:
 
 };
 
- unsigned  Warzywo::n = 0;
+ 
