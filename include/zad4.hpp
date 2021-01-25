@@ -15,6 +15,6 @@ void jedzOstatnieWarzywa(const std::vector< Warzywo > w, unsigned n, std::ostrea
     }
 
     for (auto it = w.rbegin() + 1; it != w.rend() - 1; ++it) {
-        s << w.opis();
+        it -> opis(s);
     }
 }
