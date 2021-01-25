@@ -32,7 +32,7 @@ public:
           << ", "
           << kolor << "\n";
     }
-unsigned  Warzywo::n = 0;
+
 private:
     std::string nazwa;
     double      cena;
@@ -41,5 +41,5 @@ private:
      static unsigned      n;
 
 };
-
+unsigned  Warzywo::n = 0;
  
