@@ -19,7 +19,7 @@ public:
         i--;
     }
 
-    static unsigned getVeg() 
+    inline static unsigned getVeg() 
     {
         return i;
     }
