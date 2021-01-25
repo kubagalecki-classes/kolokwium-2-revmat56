@@ -1,4 +1,4 @@
-#pragma once
+
 
 #include "catch.hpp"
 
@@ -26,18 +26,18 @@ public:
 
     void opis(std::ostream& s) const 
     {
-        s << "[" << nazwa << "]"
-          << ":"
-          << "[" << cena << "]"
+        s <<  nazwa << 
+          ":"
+           << cena 
           << ","
-          << "[" << kolor << "]" << std::endl;
+          << kolor << "\n";
     }
 
 private:
     std::string nazwa;
     double      cena;
     int         kolor;
-    inline static unsigned int i;
+    inline static unsigned i;
 
 };
-inline unsigned int Warzywo::i = 0;
+inline unsigned Warzywo::i = 0;
