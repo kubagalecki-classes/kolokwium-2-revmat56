@@ -7,7 +7,7 @@
 // tutaj szablon gotujZupe
 
 template <class T>
-unsigned gotujZupe(const Warzywo& a,T& t)
+unsigned int gotujZupe(const Warzywo& a,T& t)
 {
     return (t.gotuj(a)) * (t.gotuj(a));
 }
