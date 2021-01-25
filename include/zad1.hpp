@@ -41,5 +41,5 @@ private:
      static unsigned      n;
 
 };
-unsigned  Warzywo::n = 0;
+
  
