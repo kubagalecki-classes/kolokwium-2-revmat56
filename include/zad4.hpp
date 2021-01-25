@@ -14,7 +14,7 @@ void jedzOstatnieWarzywa(const std::vector< Warzywo > w, unsigned n, std::ostrea
         throw std::logic_error("a");
     }
 
-    for (auto it = w.end() - 1; it != w.begin() + 1; --it) {
+    for (auto it = w.begin() + 1; it != w.end() - 1; ++it) {
         it -> opis(s);
     }
 }
