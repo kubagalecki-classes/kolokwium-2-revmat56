@@ -38,8 +38,8 @@ private:
     double      cena;
     int         kolor;
    
-     static unsigned int      n;
+     static unsigned      n;
 
 };
 
- unsigned int Warzywo::n = 0;
+ unsigned  Warzywo::n = 0;
