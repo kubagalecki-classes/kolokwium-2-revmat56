@@ -11,7 +11,7 @@ void jedzOstatnieWarzywa(const std::vector< Warzywo > w, unsigned n, std::ostrea
 {
     if (n >= w.size()) 
     {
-        throw logic_error("a");
+        throw std::logic_error("a");
     }
 
     for (auto it = w.rbegin() + 1; it != w.rend() - 1; ++it) {
