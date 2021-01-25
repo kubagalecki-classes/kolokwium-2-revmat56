@@ -37,7 +37,7 @@ private:
     std::string nazwa;
     double      cena;
     int         kolor;
-    inline static unsigned i;
+    inline static unsigned int i;
 
 };
-inline unsigned Warzywo::i = 0;
+inline unsigned int Warzywo::i = 0;
